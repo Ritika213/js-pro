@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: red;
+  background: rgb(191, 236, 157);
 }
 
 a {
@@ -53,7 +53,7 @@ a {
 
 .search input:focus {
   padding: 0 41px;
-  border: 2px solid red;
+  border: 2px solid blueviolet;
 }
 
 .search :where(i, span) {
@@ -71,7 +71,7 @@ a {
 
 .search input:focus ~ i,
 input:focus ~ span {
-  color: red;
+  color: blueviolet;
 }
 
 .search span {
@@ -130,7 +130,7 @@ ul li:last-child {
 }
 
 ul .word p {
-  color: red;
+  color: blueviolet;
   font-size: 18px;
   font-weight: 500;
 }
@@ -156,7 +156,7 @@ ul .content::-webkit-scrollbar {
 }
 
 .content li p {
-  color: red;
+  color: blueviolet;
   font-size: 17px;
   font-weight: 500;
 }

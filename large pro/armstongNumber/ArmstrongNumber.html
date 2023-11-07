@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            height: 100vh;
+            border-radius: 45px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: azure;
+        }
+
+        .button {
+            background-color: blueviolet;
+            color: white;
+            border-radius: 25px;
+            padding: 13px;
+            border-color: blueviolet;
+            font-size: 35px;
+            
+        }
+
+        input {
+            padding: 25px;
+            width: 150px;
+            border-radius: 10px;
+            border-color: blueviolet;
+         /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<script>
+    function armstr(){
+var arm=0,a,b,c,d,num;
+
+num=Number(document.getElementById("no_input").value);
+
+temp=num;
+while(temp>0){
+
+a=temp%10;
+temp=parseInt(temp/10); // convert float into Integer
+arm=arm+a*a*a;
+}
+if(arm==num){
+alert("Armstrong number");
+}else{
+alert("Not Armstrong number");
+}
+}
+</script>
+<body>
+  <sapn style="font-weight: bold; color: tomato; font-size: 50px;">Enter Any Number :</sapn><br><br><input id="no_input"><br><br>
+<button class="button" onclick="armstr()">Check</button></br></br>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body{
+    background-color: papayawhip;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 1rem;
+    
+  }
+  label{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Cambria;
+    font-style: italic;
+    color: orangered;
+  }
+  
+  select {
+    margin: 0 1rem 1rem 0;
+    font-size: 16px;
+  }
+  
+  main {
+    background-color: palegreen;
+    font-size: 50px;
+    padding: 1rem;
+  }
+  p {
+    margin: 1rem;
+  }
+  button {
+    border: none;
+    border-radius: 0.8rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: bisque;
+    background-color: teal;
+    width: 80px;
+  }

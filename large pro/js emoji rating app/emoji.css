@@ -1,0 +1,55 @@
+* {
+    margin:0px;
+    padding: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body {
+    background: url('https://img.freepik.com/premium-photo/leaf-background-bokeh-blur-green-background_34998-346.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container {
+    width: 50%;
+    margin:auto;
+    margin-top: 100px;
+}
+.header {
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size: 20px;
+}
+#box {
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid black;
+    background: palegreen;
+    font-size: 30px;
+    line-height: 1.6em;
+    cursor: pointer;
+    border-radius: 55px;
+}
+#box:focus {
+    background: palegreen;
+}
+#para {
+    text-align:center;
+}
+
+@media(max-width: 568px) {
+    .container {
+        width: 90%;
+    }
+    .header {
+        font-size: 18px;
+    }
+    #box {
+        font-size: 25px;
+    }
+    #para {
+        font-size: 25px !important;
+    }
+}

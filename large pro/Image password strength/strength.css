@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.background {
+    background-image: url('https://plus.unsplash.com/premium_photo-1667112532508-3658ca5c51d8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+    filter: blur(20px);
+    z-index: -1;
+}
+.container {
+    background-color: #fff; /* White background for the form container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+    color: white; /* Dark text color */
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 2rem;
+    color: white; /* Medium gray text color */
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-size: 1rem;
+    color: white; /* Dark gray text color */
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+

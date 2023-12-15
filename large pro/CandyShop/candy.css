@@ -1,0 +1,28 @@
+input {
+    margin: 5px 10px;
+    border-radius: 5px;
+    border-color: green;
+    box-sizing: 20px;
+}
+label{
+    margin-left: 10px;
+    margin-bottom: 2px;
+    color: green;
+    font-size: larger;
+    font-weight: bold;
+}
+button{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+li{
+    color: tomato;
+    font-size: larger;
+}
+
+        
+       
+        
+                    

@@ -1,0 +1,85 @@
+body{
+    background: url("https://cognitiveswitchtech.com/assets/img/graphics/compositions/undraw_contact_us_15o2.svg");
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    height: 100%;
+}
+.container {
+margin: 20px;
+border-color:#FFA500;
+}
+
+form{
+    text-align: left;
+    border: 2px solid #FFA500;
+    margin: 0 auto;
+    width: 650px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+        
+    color: #FFA500;
+    text-align: center;
+        font-size: 24px;
+        position: relative;
+
+    }
+    h1::before {
+        content: "Call";
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 60px;
+        color: rgba(0, 0, 0, 0.1)
+        /*background-color: white;*/
+
+    
+    }
+    input {
+        width: calc(100% - 20px);;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 14px;
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+        font-size: 14px;
+    
+    }
+    .datetime-inputs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .datetime-inputs label,
+    .datetime-inputs input {
+        flex-basis: 48%;
+    }
+    .datetime-inputs input {
+        width: calc(50% - 5px);
+    
+    }
+    
+    .form-button {
+        background-color: #FFA500;
+        color: #fff;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form-button:hover {
+        background-color: #FF7F00;
+    }

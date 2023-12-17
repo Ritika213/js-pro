@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+   <div class="container">
+    <form action="#" onsubmit="resgisteruser()">
+        <h1 style="text-align: center;" placeholder="Call">Book a Call</h1>
+    <h6 style="text-align: center;">Book a Call and our representative will call you within 1hr of selected time</h6>
+    <hr style="width: 100% ;">
+        <label for="name">Name:</label><br>
+     <input type="text" id="name" name="name" required><br>
+     <label for="mail">Email:</label><br>
+     <input type="email" id="mail" name="mail" required><br>
+     <label for="phone">Phone:</label><br>
+     <input type="tel" id="phone" name="phone"  required><br>
+     <label for="datetime">Time for Call:</label>
+     <div class="datetime-inputs">
+     <input type="date" id="date" name="date"  placeholder="25/10/2023" required>
+     <input type="time" id="time" name="time"  placeholder="11:00" required>
+     </div>
+     <button type="submit " class="form-button">GET A CALL</button>
+    </form>
+    </div>
+    <script>
+        function resgisteruser(event){
+            event.preventDefault()
+             
+            var name=event.target.name.value;
+            var email=event.target.email.value;
+            var phone=event.target.phone.value;
+            var date=event.target.date.value;
+            var time=event.target.time.value;
+            console.log("Name:"+name);
+            console.log("Email:"+email);
+            console.log("Phone Number:"+phone);
+            console.log("Date:"+date);
+            console.log("Time:"+time)
+
+        }
+    </script>
+</body>
+</html>

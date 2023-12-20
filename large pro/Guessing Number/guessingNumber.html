@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Number</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: palegreen;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: khaki;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <p>Guess the number between 1 and 100:</p>
+        <input type="number" id="userGuess" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+    </div>
+    <script>
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+let turns = 0;
+
+function checkGuess() {
+    let userGuess = parseInt(document.getElementById("userGuess").value);
+
+    if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+        alert("Please enter a valid number between 1 and 100.");
+        return;
+    }
+
+    turns++;
+
+    if (userGuess === randomNumber) {
+        const score = 100 - turns;
+        document.getElementById("message").innerHTML = `Congratulations! You guessed the number in ${turns} turns! Your score is ${score}.`;
+    } else if (userGuess < randomNumber) {
+        document.getElementById("message").innerHTML = "Your guess was too low. Try again.";
+    } else {
+        document.getElementById("message").innerHTML = "Your guess was too high. Try again.";
+    }
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Water Gun Game</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: sandybrown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  background-color: pink;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#result {
+  font-size: 18px;
+  margin-top: 20px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Snake Water Gun Game</h1>
+    <button onclick="playGame()">Play Game</button>
+    <div id="result"></div>
+  </div>
+  <script>
+  function playGame() {
+    let user = prompt("Enter snake, water, or gun");
+    let cpu1 = Math.floor(Math.random() * 3);
+    let cpu = ["snake", "water", "gun"][cpu1];
+  
+    const match = (cpu, user) => {
+      if (cpu === user) {
+        return "Nobody";
+      } else if (cpu === "snake" && user === "water") {
+        return "cpu";
+      } else if (cpu === "snake" && user === "gun") {
+        return "user";
+      } else if (cpu === "gun" && user === "water") {
+        return "user";
+      } else if (cpu === "gun" && user === "snake") {
+        return "cpu";
+      } else if (cpu === "water" && user === "snake") {
+        return "user";
+      } else if (cpu === "water" && user === "gun") {
+        return "cpu";
+      }
+    };
+  
+    let result = match(cpu, user);
+    document.getElementById("result").innerHTML = `CPU: ${cpu} <br> User: ${user} <br> The winner is: ${result.toUpperCase()}`;
+  }
+  </script>
+  
+</body>
+</html>

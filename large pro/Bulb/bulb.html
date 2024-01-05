@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>On Off Bulb</title>
+  <style>
+    html, body {
+        height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f0f0; /* Background color for the page */
+      margin: 0;
+    }
+
+    .bulb {
+        background: yellow;
+      border-radius: 50%;
+      height: 300px;
+      width: 150px;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .bulb:before,
+    .bulb:after {
+        content: "";
+      position: absolute;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      top: 0;
+      left: 0;
+    }
+
+    .bulb:after {
+      height: 50px;
+      top: 75px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="bulb" class="bulbcontainer bulb"></div>
+
+  <script>
+    setInterval(async function() {
+      document.querySelector("#bulb").classList.toggle("bulb");
+    }, 500);
+  </script>
+</body>
+
+</html>
+
